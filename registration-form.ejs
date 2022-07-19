@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div id="container">
+        <form action="/dashboard" method="post" id="some">
+            <div class="input"><input type="text" name="name" id="name" placeholder="Name"></div>
+            <div class="input"><input type="email" name="email" id="email" placeholder="E-Mail"></div>
+            <div class="input"><input type="password" name="password" id="password" placeholder="Password"></div>
+            <div class="input"><input type="password" name="confirm_password" id="confirm_password" placeholder="Re-Enter Password"></div>
+            <div class="button"><button type="submit" id="submit" name="submit">SIGNUP</button></div>
+            
+        <a href="./login" id="login">Login</a>
+    
+        </form>
+    </div>
+  
+    
+</body>
+</html>
+
+<style>
+    
+    *{
+        box-sizing: border-box;
+        outline: none;
+        overflow: hidden;
+        justify-content: center;
+       
+    }
+    #container{
+        background-color: white;
+        border: 2px solid red;
+        display: inline-block;
+        margin-left: 42vw;
+        margin-right: 35vw;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+          
+        
+    }
+    .input>input{
+        background-color: white;
+        border:2px solid black;
+        margin-bottom: 2vh;
+        height: 4vh;
+        border-radius: 10px;
+    
+    }
+   
+    .input>input:focus{
+        border: 2px solid rgb(42, 71, 201);
+    }
+
+    .button>button{
+        background-color: rgb(42, 71, 201) ;
+        color: white;
+        height: 25px;
+        margin-top:2vh;
+    }
+    #login{
+        text-decoration: none;
+        color: rgb(42, 71, 201);
+    }
+</style>
